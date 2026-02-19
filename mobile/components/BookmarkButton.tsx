@@ -4,6 +4,7 @@ import { auth, db } from '../lib/firebase';
 import { collection, query, onSnapshot, doc, setDoc, deleteDoc, orderBy } from 'firebase/firestore';
 import { NewsArticle } from '../lib/newsapi';
 import { useRouter } from 'expo-router';
+import { encode } from 'base-64';
 
 interface BookmarkButtonProps {
   article: NewsArticle;
@@ -40,7 +41,7 @@ export default function BookmarkButton({ article }: BookmarkButtonProps) {
 
     setLoading(true);
     try {
-      const bookmarkId = Buffer.from(article.url).toString('base64').replace(/[/+=]/g, '');
+      const bookmarkId = encode(article.url).replace(/[/+=]/g, '');
       const bookmarkRef = doc(db, 'users', user.uid, 'bookmarks', bookmarkId);
 
       if (bookmarked) {
