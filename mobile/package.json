@@ -19,7 +19,7 @@
     "nativewind": "^4.0.1",
     "expo-notifications": "~0.28.0",
     "expo-device": "~6.0.0",
-    "firebase": "^10.7.1",
+    "firebase": "^11.2.0",
     "axios": "^1.6.2",
     "base-64": "^1.0.0"
   },
