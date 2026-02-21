@@ -23,6 +23,12 @@ export default function Navbar() {
 
           <div className="flex items-center space-x-4">
             <ThemeToggle />
+            <Link
+              href="/education"
+              className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+            >
+              Education
+            </Link>
             {user ? (
               <>
                 <Link
