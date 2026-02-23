@@ -22,6 +22,44 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center space-x-4">
+            <div className="hidden md:flex items-center space-x-4">
+              <Link
+                href="/exam"
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium"
+              >
+                📝 Exam
+              </Link>
+              <Link
+                href="/exam-patterns"
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium"
+              >
+                📊 Patterns
+              </Link>
+              <Link
+                href="/papers"
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium"
+              >
+                📄 Papers
+              </Link>
+              <Link
+                href="/notes"
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium"
+              >
+                📚 Notes
+              </Link>
+              <Link
+                href="/ai-assistant"
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium"
+              >
+                🤖 AI Assistant
+              </Link>
+              <Link
+                href="/resources"
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium"
+              >
+                🌐 Resources
+              </Link>
+            </div>
             <ThemeToggle />
             {user ? (
               <>

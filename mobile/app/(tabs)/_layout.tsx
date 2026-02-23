@@ -11,6 +11,41 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="exam"
+        options={{
+          title: 'Exam',
+          tabBarIcon: () => '📝',
+        }}
+      />
+      <Tabs.Screen
+        name="patterns"
+        options={{
+          title: 'Patterns',
+          tabBarIcon: () => '📊',
+        }}
+      />
+      <Tabs.Screen
+        name="notes"
+        options={{
+          title: 'Notes',
+          tabBarIcon: () => '📚',
+        }}
+      />
+      <Tabs.Screen
+        name="ai"
+        options={{
+          title: 'AI Assistant',
+          tabBarIcon: () => '🤖',
+        }}
+      />
+      <Tabs.Screen
+        name="resources"
+        options={{
+          title: 'Resources',
+          tabBarIcon: () => '🌐',
+        }}
+      />
+      <Tabs.Screen
         name="search"
         options={{
           title: 'Search',
