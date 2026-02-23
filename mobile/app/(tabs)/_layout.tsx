@@ -18,6 +18,13 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="patterns"
+        options={{
+          title: 'Patterns',
+          tabBarIcon: () => '📊',
+        }}
+      />
+      <Tabs.Screen
         name="notes"
         options={{
           title: 'Notes',

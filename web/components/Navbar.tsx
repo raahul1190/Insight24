@@ -30,6 +30,12 @@ export default function Navbar() {
                 📝 Exam
               </Link>
               <Link
+                href="/exam-patterns"
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium"
+              >
+                📊 Patterns
+              </Link>
+              <Link
                 href="/papers"
                 className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium"
               >
