@@ -47,6 +47,12 @@ export default function Navbar() {
               >
                 🤖 AI Assistant
               </Link>
+              <Link
+                href="/resources"
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm font-medium"
+              >
+                🌐 Resources
+              </Link>
             </div>
             <ThemeToggle />
             {user ? (

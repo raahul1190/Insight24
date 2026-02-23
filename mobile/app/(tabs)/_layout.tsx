@@ -32,6 +32,13 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="resources"
+        options={{
+          title: 'Resources',
+          tabBarIcon: () => '🌐',
+        }}
+      />
+      <Tabs.Screen
         name="search"
         options={{
           title: 'Search',
