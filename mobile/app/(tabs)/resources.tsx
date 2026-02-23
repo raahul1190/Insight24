@@ -191,9 +191,14 @@ export default function ResourcesScreen() {
               ))}
             </View>
 
-            <Text className="mt-2 text-xs text-gray-400 dark:text-gray-500" numberOfLines={1}>
-              {site.url}
-            </Text>
+            {/* Visit Website button */}
+            <TouchableOpacity
+              onPress={() => openLink(site.url)}
+              className="mt-3 bg-blue-600 rounded-lg py-2 px-4 self-start"
+              activeOpacity={0.8}
+            >
+              <Text className="text-white text-sm font-semibold">Visit Website →</Text>
+            </TouchableOpacity>
           </TouchableOpacity>
         ))}
       </View>

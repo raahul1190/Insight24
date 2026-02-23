@@ -175,16 +175,16 @@ export default function ResourcesPage() {
             </p>
 
             {/* Tags */}
-            <div className="flex flex-wrap gap-1">
+            <div className="flex flex-wrap gap-1 mb-4">
               {site.tags.map((tag) => (
                 <TagBadge key={tag} label={tag} />
               ))}
             </div>
 
-            {/* URL hint */}
-            <p className="mt-3 text-xs text-gray-400 dark:text-gray-500 truncate">
-              {site.url}
-            </p>
+            {/* Visit Website button */}
+            <span className="inline-flex items-center gap-1 px-4 py-2 rounded-lg bg-blue-600 group-hover:bg-blue-700 text-white text-sm font-semibold self-start transition-colors">
+              Visit Website →
+            </span>
           </a>
         ))}
       </div>
